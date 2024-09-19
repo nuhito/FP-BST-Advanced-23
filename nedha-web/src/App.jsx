@@ -1,31 +1,20 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Dishes from "./components/Dishes";
-import Reviews from "./components/Review";
-import Review from "./components/Review";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import apps from './apps/apps'; /* Ini nanti bisa diganti ke apa aja */
+import MenuPage from './MenuPage'; /* ini juga */
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Navbar />
-
-      <main>
-        <div id="home">
-          <Home />
-        </div>
-
-        <div id="hidangan">
-          <Dishes />
-        </div>
-
-        <div id="ulasan">
-          <Review />
-        </div>
-      </main>
-
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<apps />} />
+        <Route path="/menu" element={<MenuPage />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;
+};
+
+
