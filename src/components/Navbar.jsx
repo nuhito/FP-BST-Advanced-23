@@ -68,7 +68,7 @@ const Navbar = () => {
               Reviews
             </Link>
 
-            <Button title="Login" />
+            <Button title="keranjang" />
           </nav>
 
           <div className="md:hidden flex items-center">
@@ -126,7 +126,7 @@ const Navbar = () => {
             Reviews
           </Link>
 
-          <Button title="login" />
+          <Button title="keranjang" />
         </div>
       </div>
     </div>
