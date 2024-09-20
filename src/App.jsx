@@ -12,7 +12,7 @@ const App = () => {
       <Navbar />
 
       <main>
-        <div id="home">
+        <div id="halamanutama">
           <Home />
         </div>
 
@@ -30,6 +30,9 @@ const App = () => {
       </main>
 
     </div>
+    
+    
+    
   );
 };
 

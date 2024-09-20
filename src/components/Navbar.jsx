@@ -27,6 +27,14 @@ const Navbar = () => {
             <h1 className="text-xl font-semibold">Nedha</h1>
           </div>
 
+          <nav className="flex flex-row items-center text-lg font-medium gap-8">
+          {/* Tambahkan tombol keranjang */}
+          <Link to="/keranjang" className="hover:text-brightColor transition-all cursor-pointer">
+            Keranjang
+          </Link>
+
+        </nav>
+
           <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">
             <Link
               to="halamanutama"
@@ -68,7 +76,6 @@ const Navbar = () => {
               Reviews
             </Link>
 
-            <Button title="keranjang" />
           </nav>
 
           <div className="md:hidden flex items-center">
@@ -126,7 +133,6 @@ const Navbar = () => {
             Reviews
           </Link>
 
-          <Button title="keranjang" />
         </div>
       </div>
     </div>
