@@ -11,16 +11,16 @@ const Dishes = () => {
   return (
     <div className=" min-h-screen flex flex-col justify-center items-center lg:px-32 px-5">
       <h1 className=" text-4xl font-semibold text-center pt-24 pb-10">
-        Menu kami,
+        Hidangan kami
       </h1>
 
       <div className=" flex flex-wrap gap-8 justify-center">
-        <DishesCard img={img1} title="Rendang" price="Rp 50.000" />
-        <DishesCard img={img2} title="Nasi Kuning" price="Rp 100.000" />
-        <DishesCard img={img3} title="Ayam Goreng" price="69.000" />
-        <DishesCard img={img4} title="Soto" price="Rp 35.000" />
-        <DishesCard img={img5} title="Sate" price="Rp 40.000" />
-        <DishesCard img={img6} title="Cilor" price="Rp 5.000" />
+        <DishesCard img={img1} title="Soto" price="Rp 30.000" />
+        <DishesCard img={img2} title="Rendang" price="Rp 50.000" />
+        <DishesCard img={img3} title="Ikan Bakar" price="Rp 40.000" />
+        <DishesCard img={img4} title="Gado gado" price="Rp 20.000" />
+        <DishesCard img={img5} title="Cumi Bakar" price="Rp 60.000" />
+        <DishesCard img={img6} title="Nasi Kuning" price="Rp 65.000" />
       </div>
     </div>
   );

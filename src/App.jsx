@@ -1,22 +1,36 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Apps from "./routes/Makanan";
-import MenuAwal from "./routes/MenuAwal";
- /* Ini nanti bisa diganti ke apa aja */
-// import MenuPage from './MenuPage'; /* ini juga */
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Menu from "./components/Menu";
+import Dishes from "./components/Dishes";
+import Reviews from "./components/Review";
+import Review from "./components/Review";
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<MenuAwal />} />
-        <Route path="/menu" element={<MenuPage />} />
-        <Route path = "/Makanan" element={<Apps/>}></Route>
-      </Routes>
-    </Router>
+    <div>
+      <Navbar />
+
+      <main>
+        <div id="home">
+          <Home />
+        </div>
+
+        <div id="hidangan">
+          <Dishes />
+        </div>
+
+        <div id="spesial">
+          <Menu />
+        </div>
+
+        <div id="review">
+          <Review />
+        </div>
+      </main>
+
+    </div>
   );
-}
+};
 
 export default App;
-
-

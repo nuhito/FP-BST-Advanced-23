@@ -5,7 +5,7 @@ const ReviewCard = (props) => {
     <div className=" w-full md:w-1/3 bg-white border-2 border-lightText md:border-none p-5 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
       <div>
         <p className=" text-lightText">
-            Kane bgt omggggggg!
+          Enak Banget kane abiezz
         </p>
       </div>
 

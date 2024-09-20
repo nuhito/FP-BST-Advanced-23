@@ -29,13 +29,13 @@ const Navbar = () => {
 
           <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">
             <Link
-              to="home"
+              to="halamanutama"
               spy={true}
               smooth={true}
               duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
-              Home
+              Utama
             </Link>
 
             <Link
@@ -48,15 +48,24 @@ const Navbar = () => {
               Hidangan
             </Link>
 
-
             <Link
-              to="ulasan"
+              to="spesial"
               spy={true}
               smooth={true}
               duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
-              Ulasan
+              Spesial
+            </Link>
+
+            <Link
+              to="review"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="hover:text-brightColor transition-all cursor-pointer"
+            >
+              Reviews
             </Link>
 
             <Button title="Login" />
@@ -77,14 +86,14 @@ const Navbar = () => {
           } lg:hidden flex flex-col absolute bg-black text-white left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
         >
           <Link
-            to="home"
+            to="halamanutama"
             spy={true}
             smooth={true}
             duration={500}
             className="hover:text-brightColor transition-all cursor-pointer"
             onClick={closeMenu}
           >
-            Home
+            Utama
           </Link>
           <Link
             to="hidangan"
@@ -94,21 +103,30 @@ const Navbar = () => {
             className="hover:text-brightColor transition-all cursor-pointer"
             onClick={closeMenu}
           >
-            Dishes
+            Hidangan
           </Link>
-          
           <Link
-            to="ulasan"
+            to="spesial"
             spy={true}
             smooth={true}
             duration={500}
             className="hover:text-brightColor transition-all cursor-pointer"
             onClick={closeMenu}
           >
+            Spesial
+          </Link>
+          <Link
+            to="review"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className=" hover:text-brightColor transition-all cursor-pointer"
+            onClick={closeMenu}
+          >
             Reviews
           </Link>
 
-          <Button title="Login" />
+          <Button title="login" />
         </div>
       </div>
     </div>

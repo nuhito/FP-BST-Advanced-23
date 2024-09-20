@@ -8,12 +8,12 @@ const Review = () => {
   return (
     <div className=" min-h-screen flex flex-col items-center justify-center md:px-32 px-5">
       <h1 className=" text-4xl font-semibold text-center lg:pt-16 pt-24 pb-10">
-        Ulasan Pelanggan
+        Review Pelanggan
       </h1>
       <div className=" flex flex-col md:flex-row gap-5 mt-5">
-        <ReviewCard img={img1} name="Alvaro" />
-        <ReviewCard img={img2} name="Arvito" />
-        <ReviewCard img={img3} name="Nugi" />
+        <ReviewCard img={img1} name="Arvito" />
+        <ReviewCard img={img2} name="Nugi" />
+        <ReviewCard img={img3} name="Alvaro" />
       </div>
     </div>
   );
